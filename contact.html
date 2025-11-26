@@ -3,312 +3,643 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="src/output.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="public/megamenu.css">
+
 </head>
 <body>
-    <header class="text-gray-600 body-font sticky top-0 z-30 w-full px-2 py-2 bg-white shadow-xl shadow-blue-600/20 sm:px-4">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <!-- <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg> -->
-                <img src="img/Logo_Horizontal.png" width="15%" alt="">
-                <span class="ml-3 text-xl"></span>
-            </a>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-                <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
-                <a href="contact.html" class="mr-5 hover:text-gray-900">Contact Us</a>
-                <a href="services.html" class="mr-5 hover:text-gray-900">Services</a>
-            </nav>
-    
-        </div>
-    </header>
-    
-    <section class="text-gray-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever</p>
-          </div>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
-                </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg" type="submit" >Submit</button>
-              </div>
-              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a class="text-blue-500">support@planetctechnology.com</a>
-                <p class="leading-normal my-5">Digital Payment
-                  <br>Instant Solution 
+
+  <!-- further code in next block -->
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+
+  <div id="header">
+    <div class="logo">
+      <img src="images/Logo_Horizontal.png" height="32px" width="162px" alt="">
+    </div>
+    <navi>
+
+      <ul class="navtext">
+        <li>
+          <a class="navtag" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="navtag" href="">API's</a>
+          <ul class="mega-dropdown">
+            <li class="row">
+              <ul class="mega-col">
+                <li><a href="software_pages/api_solution.html">API Solution</a></li>
+                <li><a href="software_pages/recharge.html">Recharge API</a></li>
+                <li><a href="software_pages/operator_fetch.html">Operator Fetch API</a></li>
+                <li><a href="software_pages/roffer_api.html">Roffer API</a></li>
+                <li><a href="software_pages/operator_traiff.html">Operator Traiff Plan API</a></li>
+                <li><a href="software_pages/lapu_recharge.html">Lapu Recharge API</a></li>
+                <li><a href="software_pages/dth_recharge.html">DTH Recharge API</a></li>
+                <li><a href="software_pages/dth_fetch.html">DTH Fetch API</a></li>
+                <li><a href="software_pages/bbps.html">BBPS API</a></li>
+                <li><a href="software_pages/utility_bill.html">Utility Bill Payment API</a></li>
+                <li><a href="software_pages/pan_card.html">Pancard API(NSDL & UTI)</a></li>
+                <li><a href="software_pages/nsdl_thum.html">NSDL Thumb & OTP Pan API</a></li>
+                <li><a href="software_pages/loan_emi.html">Loan EMI Payment API</a></li>
+                <li><a href="software_pages/fastag.html">FasTag Recharge API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+                <li><a href="software_pages/lic.html">LIC API</a></li>
+                <li><a href="software_pages/insurance_emi_api.html">Insurance EMI Payment API</a></li>
+                <li><a href="software_pages/gas_cylinder.html">Gas Cylinder Booking API</a></li>
+                <li><a href="software_pages/credit_bill_rent.html">Credit Card Bill payment/Rent Payment API's</a></li>
+                <li><a href="software_pages/sms.html">SMS API</a></li>
+                <li><a href="software_pages/bulk_sms.html">Bulk SMS API</a></li>
+                <li><a href="software_pages/whatsapp.html">WhatsApp API</a></li>
+                <li><a href="software_pages/aeps.html">AEPS API</a></li>
+                <li><a href="software_pages/dmt.html">DMT API</a></li>
+                <li><a href="software_pages/indo_nepal.html">Indo Nepal Money Transfer API</a></li>
+                <li><a href="software_pages/matm.html">mATM Solution API</a></li>
+                <li><a href="software_pages/mpos_pos.html">MPOS & POS Machine API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+                
+                <li><a href="software_pages/cms.html">CMS API</a></li>
+                <li><a href="software_pages/ac_verification.html">A/C Verification API</a></li>
+                <li><a href="software_pages/ifsc_ver.html">IFSC Verification API</a></li>
+                <li><a href="software_pages/upi_ver.html">UPI Verification API</a></li>
+                <li><a href="software_pages/pan_ver.html">Pan Verification</a></li>
+                <li><a href="software_pages/aadhar_ver.html">Aadhar Verification API</a></li>
+                <li><a href="software_pages/aadhar_authen.html">Aadhar Authentication API</a></li>
+                <li><a href="software_pages/aadhar_xml.html">Aadhar Xml Extraction</a></li>
+                <li><a href="software_pages/driving_licence.html">Driving Licence Authentication API</a></li>
+                <li><a href="software_pages/esign_authen.html">eSign Authentication System API</a></li>
+                <li><a href="software_pages/insurnace_buy.html">Insurance Buy API <br> (Personal,Health,<br> General)</a></li>
+                <li><a href="software_pages/gift.html">Gift Voucher API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+              
+                <li><a href="software_pages/irctc.html">IRCTC API(Bus,Flight,Hotal,<br> Cab,Train,Travel)</a></li>
+                <li><a href="software_pages/upi_ecoll.html">UPI Ecollection API</a></li>
+                <li><a href="payment.html">Payment Gateway</a></li>
+                <li><a href="software_pages/virtual_ac.html">Virtual Account API</a></li>
+                <li><a href="software_pages/payout_payin.html">Payout/Payin settlement API's</a></li>
+                <li><a href="software_pages/upi.html">UPI To UPI Transfer API</a></li>
+                <li><a href="software_pages/home_loan.html">Home Loan API</a></li>
+                <li><a href="software_pages/personal_loan.html">Personal Loan API</a></li>
+                <li><a href="software_pages/business_loan.html">Business Loan API</a></li>
+                <li><a href="software_pages/vehicle_loan.html">Vehicle Loan API</a></li>
+                <li><a href="software_pages/ac_opening.html">A/C Opening API</a></li>
+                <li><a href="software_pages/credit_card.html">Credit Card API</a></li>
+                <li><a href="software_pages/demat_ac.html">Demat A/C Opening API</a></li>
+
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="navtag" href="">Services</a>
+          <ul>
+            <li>
+              <a href='insurance.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z" />
+                </svg>
+                Insurance
+              </a>
+            </li>
+            <li>
+              <a href='micro_atm.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6.644 11.094a.5.5 0 0 1 .356-.15h2a.5.5 0 0 1 .356.15c.175.177.39.347.603.496a7 7 0 0 0 .752.456l.01.006h.003A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.002-.001.01-.006a4 4 0 0 0 .214-.116 8 8 0 0 0 .539-.34c.214-.15.428-.319.603-.496M7 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
+                  <path
+                    d="M2 3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm6 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4M12.5 7a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1" />
+                </svg>
+                Micro ATM
+              </a>
+            </li>
+            <li>
+              <a href='whitelable.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                  <path
+                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                </svg>
+                Whitelable Software
+              </a>
+            </li>
+            <li>
+              <a href='mlm_devp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                MLM Development
+              </a>
+
+            </li>
+            <li>
+              <a href='payment.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path d="M2 2h2v2H2z" />
+                  <path d="M6 0v6H0V0zM5 1H1v4h4zM4 12H2v2h2z" />
+                  <path d="M6 10v6H0v-6zm-5 1v4h4v-4zm11-9h2v2h-2z" />
+                  <path
+                    d="M10 0v6h6V0zm5 1v4h-4V1zM8 1V0h1v2H8v2H7V1zm0 5V4h1v2zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8zm0 0v1H2V8H1v1H0V7h3v1zm10 1h-1V7h1zm-1 0h-1v2h2v-1h-1zm-4 0h2v1h-1v1h-1zm2 3v-1h-1v1h-1v1H9v1h3v-2zm0 0h3v1h-2v1h-1zm-4-1v1h1v-2H7v1z" />
+                  <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z" />
+                </svg>
+                Payment Gatway
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="navtag" href="">Products</a>
+          <ul>
+            <li>
+              <a href='whitelable.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                  <path
+                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                </svg>
+                Whitelable Software
+              </a>
+            </li>
+            <li>
+
+            </li>
+            <li>
+              <a href='mlm_devp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                MLM
+              </a>
+            </li>
+
+
+            <li><a href='erp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                ERP
+              </a>
+            </li>
+
+            <li>
+              <a href='cms.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                CMS
+              </a>
+            </li>
+
+            <li>
+              <a href='reseller_soft.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                Reseller Software
+              </a>
+            </li>
+            <li>
+              <a href='real_estate.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                Real Estate Software
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="navtag" href="contact.html">Contact Us</a>
+        </li>
+
+        <li>
+          <a class="navtag" href="about.html">About Us</a>
+        </li>
+        <li>
+          <a class="navtag" href="sign_login.html">Sign/Login</a>
+        </li>
+      </ul>
+    </navi>
+  </div>
+
+  <script src="../js/dropdownbt.js"></script>
+
+  <!-- head section end  -->
+
+
+    <div id="contact-us" class="overflow-hidden bg-white py-28 px-4 dark:bg-slate-900 sm:px-6 lg:px-8 lg:py-24">
+        <div class="relative mx-auto max-w-xl">
+            <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none"
+                viewBox="0 0 404 404" aria-hidden="true">
+                <defs>
+                    <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                        patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-600"
+                            fill="currentColor"></rect>
+                    </pattern>
+                </defs>
+                <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"></rect>
+            </svg>
+            <svg class="absolute right-full bottom-0 -translate-x-1/2 transform" width="404" height="404" fill="none"
+                viewBox="0 0 404 404" aria-hidden="true">
+                <defs>
+                    <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                        patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-800"
+                            fill="currentColor"></rect>
+                    </pattern>
+                </defs>
+                <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"></rect>
+            </svg>
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-4xl">Contact Us
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-slate-400">Please use the form below to contact us.
+                    Thank you!
                 </p>
-                <span class="inline-flex">
-                  <a class="text-gray-500">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                    </svg>
-                  </a>
-                  <a class="ml-4 text-gray-500">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                  </a>
-                  <a class="ml-4 text-gray-500">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                  </a>
-                  <a class="ml-4 text-gray-500">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                  </a>
-                </span>
-              </div>
             </div>
-          </div>
+            <div class="mt-12">
+                <form class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <div class="sm:col-span-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Name</label>
+                        <div class="mt-1"><input name="name" type="text" id="name" autocomplete="organization" required="" class="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Email</label>
+                        <div class="mt-1"><input name="email" id="email" required="" type="email" autocomplete="email" class="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Message</label>
+                        <div class="mt-1">
+                            <textarea required="" name="message" id="message" rows="4" class="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex justify-end sm:col-span-2">
+                        <button type="submit" class="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-sky-500 shadow-sm sm:text-sm transition-colors duration-75 text-sky-500 border border-sky-500 hover:bg-sky-50 active:bg-sky-100 disabled:bg-sky-100 dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:disabled:bg-gray-800 disabled:cursor-not-allowed">
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </section>
+    </div>
+
+
     
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-            </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">1</div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" class="w-12 h-14" viewBox="0 0 96 94">
-                    <path d="M 78.518 33.518 C 78.518 15.007 63.512 0 45 0 S 11.482 15.007 11.482 33.518 c 0 13.831 8.379 25.702 20.336 30.823 C 36.599 73.647 45 90 45 90 l 13.182 -25.659 C 70.139 59.22 78.518 47.349 78.518 33.518 z"></path>
-                  </svg>
-              </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Address</h2>
-                <p class="leading-relaxed">A-3 jhariya complax noida uttar pradesh 202001
-                  Branch Office : B-9 Ramghat Road, Vikram Colony Near Chawla Petrol Pump Aligarh, Uttar Pradesh – 202001</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-            </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">2</div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                    <defs>
-                    </defs>
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                        <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(35,91,216); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <path d="M 64.567 26.495 H 25.433 c -3.142 0 -5.689 2.547 -5.689 5.689 v 25.631 c 0 3.142 2.547 5.689 5.689 5.689 h 39.135 c 3.142 0 5.689 -2.547 5.689 -5.689 V 32.184 C 70.256 29.043 67.709 26.495 64.567 26.495 z M 63.343 57.47 c -0.295 0.306 -0.688 0.46 -1.081 0.46 c -0.374 0 -0.749 -0.14 -1.04 -0.419 l -9.419 -9.065 l -1.357 1.489 c -1.394 1.528 -3.378 2.404 -5.446 2.404 c -2.068 0 -4.053 -0.876 -5.446 -2.404 l -1.337 -1.467 l -9.022 9.023 c -0.292 0.293 -0.677 0.439 -1.061 0.439 s -0.768 -0.146 -1.061 -0.439 c -0.586 -0.586 -0.586 -1.535 0 -2.121 l 9.12 -9.121 L 26.63 35.754 c -0.558 -0.612 -0.514 -1.561 0.098 -2.119 c 0.613 -0.558 1.562 -0.514 2.119 0.098 l 12.924 14.18 c 0.838 0.92 1.985 1.426 3.229 1.426 s 2.392 -0.506 3.229 -1.426 l 2.422 -2.657 l 10.502 -11.522 c 0.559 -0.612 1.507 -0.655 2.119 -0.098 c 0.612 0.558 0.656 1.506 0.098 2.119 l -9.546 10.474 l 9.477 9.121 C 63.898 55.924 63.917 56.873 63.343 57.47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                    </g>
-                    </svg>
-              </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Email</h2>
-                <p class="leading-relaxed">support@planetctechnology.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-            </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">3</div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                    <defs>
-                    </defs>
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                        <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(33,150,243); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <path d="M 57.332 70.088 c -1.955 0.001 -4.074 -0.313 -6.32 -0.946 c -6.303 -1.777 -12.904 -5.885 -18.586 -11.568 c -5.682 -5.682 -9.79 -12.283 -11.568 -18.586 c -1.84 -6.528 -0.978 -11.999 2.429 -15.406 c 0.124 -0.124 0.25 -0.244 0.38 -0.36 c 0.033 -0.046 0.07 -0.09 0.112 -0.131 l 1.819 -1.819 c 0.877 -0.877 2.042 -1.36 3.282 -1.36 c 1.24 0 2.405 0.483 3.282 1.36 l 6.976 6.977 c 1.809 1.809 1.809 4.754 0 6.563 L 36.149 37.8 c -0.753 0.753 -0.753 1.979 0 2.732 L 49.468 53.85 c 0.729 0.729 2.002 0.729 2.732 0 l 2.988 -2.988 c 1.809 -1.808 4.755 -1.81 6.564 -0.001 l 6.977 6.977 c 0.876 0.876 1.359 2.042 1.359 3.281 s -0.483 2.405 -1.359 3.281 l -1.819 1.819 c -0.042 0.042 -0.087 0.08 -0.133 0.114 c -0.117 0.13 -0.236 0.256 -0.36 0.379 C 64.182 68.948 61.058 70.088 57.332 70.088 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                    </g>
-                    </svg>
-              </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Phone</h2>
-                <p class="leading-relaxed">8006478964</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-            </div>
-            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">4</div>
-            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-                    <defs>
-                    </defs>
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                        <rect x="16.09" y="8.31" rx="0" ry="0" width="57.77" height="79.7" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                        <path d="M 72.276 10.927 V 85 H 17.724 V 10.927 H 72.276 M 72.641 5.927 H 17.359 c -2.56 0 -4.635 2.075 -4.635 4.635 v 74.804 c 0 2.56 2.075 4.635 4.635 4.635 h 55.282 c 2.56 0 4.635 -2.075 4.635 -4.635 V 10.562 C 77.276 8.002 75.201 5.927 72.641 5.927 L 72.641 5.927 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(97,94,102); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                        <path d="M 49.346 4.239 C 49.282 1.889 47.366 0 45 0 s -4.282 1.889 -4.346 4.239 c -4.446 0.052 -8.035 3.668 -8.035 8.126 v 0.055 h 24.761 v -0.055 C 57.381 7.907 53.792 4.292 49.346 4.239 z M 45 5.211 c -0.949 0 -1.718 -0.769 -1.718 -1.718 S 44.051 1.774 45 1.774 s 1.718 0.769 1.718 1.718 S 45.949 5.211 45 5.211 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(180,183,191); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                        <polygon points="48.18,57.37 36.14,47.34 28.78,56.55 27.22,55.3 35.86,44.5 47.82,54.48 61.2,36.33 62.8,37.52 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(180,183,191); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <circle cx="28.001" cy="55.921" r="3.181" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(220,9,36); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <circle cx="36.001" cy="45.921" r="3.181" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,84,37); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <circle cx="48.001" cy="55.921" r="3.181" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,210,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                        <circle cx="62.001" cy="36.921" r="3.181" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(152,192,229); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                    </g>
-                    </svg>
-              </div>
-              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">CIN</h2>
-                <p class="leading-relaxed">U58202UP2023PTC191897</p>
-              </div>
-            </div>
-          </div>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
-      </section>
-
-
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="img/Logo_Horizontal.png" width="50%" alt="error">
-              <span class="ml-3 text-xl"></span>
-            </a>
-            <p class="mt-2 text-sm text-gray-500">Digital Payment Instant Solution</p>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"
+              class="w-12 h-14" viewBox="0 0 96 94">
+              <path
+                d="M 78.518 33.518 C 78.518 15.007 63.512 0 45 0 S 11.482 15.007 11.482 33.518 c 0 13.831 8.379 25.702 20.336 30.823 C 36.599 73.647 45 90 45 90 l 13.182 -25.659 C 70.139 59.22 78.518 47.349 78.518 33.518 z">
+              </path>
+            </svg>
           </div>
-          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DBOS</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="micro_atm.html" class="text-gray-600 hover:text-gray-800">Micro ATM</a>
-                </li>
-                <li>
-                  <a href="services.html" class="text-gray-600 hover:text-gray-800">UPI QR</a>
-                </li>
-                <li>
-                  <a href="services.html" class="text-gray-600 hover:text-gray-800">Domestic Money Transfer</a>
-                </li>
-                <li>
-                  <a href="insurance.html" class="text-gray-600 hover:text-gray-800">Insurance</a>
-                </li>
-                <li>
-                  <a href="index.html" class="text-gray-600 hover:text-gray-800">BBPS</a>
-                </li>
-                <li>
-                  <a href="index.html" class="text-gray-600 hover:text-gray-800">Pan Card</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Consumers</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="https://pctpay.com/index.php/industries/banking/" class="text-gray-600 hover:text-gray-800">Bank Account</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Payments</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Loans</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Investments</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Policies</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">ERP Policy</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">KYC Policy</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Performance Evaluation Policy</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Terms of Use - Merchants</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Legal</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Disclaimer</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Annual Report 22-23</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Annual Return 22-23</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Privacy</a>
-                </li>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="bg-gray-100">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 developed By Abu Faiz —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@AbuFaiz</a>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Address</h2>
+            <p class="leading-relaxed">A-3 jhariya complax noida uttar pradesh 202001
+              Branch Office : B-9 Ramghat Road, Vikram Colony Near Chawla Petrol Pump Aligarh, Uttar Pradesh – 202001
             </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
+              height="256" viewBox="0 0 256 256" xml:space="preserve">
+  
+              <defs>
+              </defs>
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                <circle cx="45" cy="45" r="45"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(35,91,216); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <path
+                  d="M 64.567 26.495 H 25.433 c -3.142 0 -5.689 2.547 -5.689 5.689 v 25.631 c 0 3.142 2.547 5.689 5.689 5.689 h 39.135 c 3.142 0 5.689 -2.547 5.689 -5.689 V 32.184 C 70.256 29.043 67.709 26.495 64.567 26.495 z M 63.343 57.47 c -0.295 0.306 -0.688 0.46 -1.081 0.46 c -0.374 0 -0.749 -0.14 -1.04 -0.419 l -9.419 -9.065 l -1.357 1.489 c -1.394 1.528 -3.378 2.404 -5.446 2.404 c -2.068 0 -4.053 -0.876 -5.446 -2.404 l -1.337 -1.467 l -9.022 9.023 c -0.292 0.293 -0.677 0.439 -1.061 0.439 s -0.768 -0.146 -1.061 -0.439 c -0.586 -0.586 -0.586 -1.535 0 -2.121 l 9.12 -9.121 L 26.63 35.754 c -0.558 -0.612 -0.514 -1.561 0.098 -2.119 c 0.613 -0.558 1.562 -0.514 2.119 0.098 l 12.924 14.18 c 0.838 0.92 1.985 1.426 3.229 1.426 s 2.392 -0.506 3.229 -1.426 l 2.422 -2.657 l 10.502 -11.522 c 0.559 -0.612 1.507 -0.655 2.119 -0.098 c 0.612 0.558 0.656 1.506 0.098 2.119 l -9.546 10.474 l 9.477 9.121 C 63.898 55.924 63.917 56.873 63.343 57.47 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              </g>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Email</h2>
+            <p class="leading-relaxed">support@planetctechnology.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
+              height="256" viewBox="0 0 256 256" xml:space="preserve">
+  
+              <defs>
+              </defs>
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                <circle cx="45" cy="45" r="45"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(33,150,243); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <path
+                  d="M 57.332 70.088 c -1.955 0.001 -4.074 -0.313 -6.32 -0.946 c -6.303 -1.777 -12.904 -5.885 -18.586 -11.568 c -5.682 -5.682 -9.79 -12.283 -11.568 -18.586 c -1.84 -6.528 -0.978 -11.999 2.429 -15.406 c 0.124 -0.124 0.25 -0.244 0.38 -0.36 c 0.033 -0.046 0.07 -0.09 0.112 -0.131 l 1.819 -1.819 c 0.877 -0.877 2.042 -1.36 3.282 -1.36 c 1.24 0 2.405 0.483 3.282 1.36 l 6.976 6.977 c 1.809 1.809 1.809 4.754 0 6.563 L 36.149 37.8 c -0.753 0.753 -0.753 1.979 0 2.732 L 49.468 53.85 c 0.729 0.729 2.002 0.729 2.732 0 l 2.988 -2.988 c 1.809 -1.808 4.755 -1.81 6.564 -0.001 l 6.977 6.977 c 0.876 0.876 1.359 2.042 1.359 3.281 s -0.483 2.405 -1.359 3.281 l -1.819 1.819 c -0.042 0.042 -0.087 0.08 -0.133 0.114 c -0.117 0.13 -0.236 0.256 -0.36 0.379 C 64.182 68.948 61.058 70.088 57.332 70.088 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              </g>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Phone</h2>
+            <p class="leading-relaxed">8006478964</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          4</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
+              height="256" viewBox="0 0 256 256" xml:space="preserve">
+  
+              <defs>
+              </defs>
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                <rect x="16.09" y="8.31" rx="0" ry="0" width="57.77" height="79.7"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <path
+                  d="M 72.276 10.927 V 85 H 17.724 V 10.927 H 72.276 M 72.641 5.927 H 17.359 c -2.56 0 -4.635 2.075 -4.635 4.635 v 74.804 c 0 2.56 2.075 4.635 4.635 4.635 h 55.282 c 2.56 0 4.635 -2.075 4.635 -4.635 V 10.562 C 77.276 8.002 75.201 5.927 72.641 5.927 L 72.641 5.927 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(97,94,102); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 49.346 4.239 C 49.282 1.889 47.366 0 45 0 s -4.282 1.889 -4.346 4.239 c -4.446 0.052 -8.035 3.668 -8.035 8.126 v 0.055 h 24.761 v -0.055 C 57.381 7.907 53.792 4.292 49.346 4.239 z M 45 5.211 c -0.949 0 -1.718 -0.769 -1.718 -1.718 S 44.051 1.774 45 1.774 s 1.718 0.769 1.718 1.718 S 45.949 5.211 45 5.211 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(180,183,191); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <polygon
+                  points="48.18,57.37 36.14,47.34 28.78,56.55 27.22,55.3 35.86,44.5 47.82,54.48 61.2,36.33 62.8,37.52 "
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(180,183,191); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <circle cx="28.001" cy="55.921" r="3.181"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(220,9,36); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <circle cx="36.001" cy="45.921" r="3.181"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,84,37); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <circle cx="48.001" cy="55.921" r="3.181"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,210,0); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+                <circle cx="62.001" cy="36.921" r="3.181"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(152,192,229); fill-rule: nonzero; opacity: 1;"
+                  transform="  matrix(1 0 0 1 0 0) " />
+              </g>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">CIN</h2>
+            <p class="leading-relaxed">U58202UP2023PTC191897</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+  <!-- footer section -->
+
+
+  <footer class="text-gray-600 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="images/Logo_Horizontal.png" width="50%" alt="error">
+          <span class="ml-3 text-xl"></span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Digital Payment Instant Solution</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DBOS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="micro_atm.html" class="text-gray-600 hover:text-gray-800">Micro ATM</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-600 hover:text-gray-800">UPI QR</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-600 hover:text-gray-800">Domestic Money Transfer</a>
+            </li>
+            <li>
+              <a href="insurance.html" class="text-gray-600 hover:text-gray-800">Insurance</a>
+            </li>
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-gray-800">BBPS</a>
+            </li>
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-gray-800">Pan Card</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Consumers</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://pctpay.com/index.php/industries/banking/" class="text-gray-600 hover:text-gray-800">Bank
+                Account</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Payments</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Loans</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Investments</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Policies</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">ERP Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KYC Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Performance Evaluation Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Terms of Use - Merchants</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Legal</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Disclaimer</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Annual Report 22-23</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Annual Return 22-23</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 developed By Abu Faiz —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@AbuFaiz</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

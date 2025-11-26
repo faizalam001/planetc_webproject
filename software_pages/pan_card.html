@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancard</title>
+    <link rel="stylesheet" href="../public/megamenu.css">
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+
+<!-- further code in next block -->
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+
+  <div id="header">
+    <div class="logo">
+      <img src="../images/Logo_Horizontal.png" height="32px" width="162px" alt="">
+    </div>
+    <navi>
+
+      <ul class="navtext">
+        <li>
+          <a class="navtag" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a class="navtag" href="">API's</a>
+          <ul class="mega-dropdown">
+            <li class="row">
+              <ul class="mega-col">
+                <li><a href="api_solution.html">API Solution</a></li>
+                <li><a href="recharge.html">Recharge API</a></li>
+                <li><a href="operator_fetch.html">Operator Fetch API</a></li>
+                <li><a href="roffer_api.html">Roffer API</a></li>
+                <li><a href="operator_traiff.html">Operator Traiff Plan API</a></li>
+                <li><a href="lapu_recharge.html">Lapu Recharge API</a></li>
+                <li><a href="dth_recharge.html">DTH Recharge API</a></li>
+                <li><a href="dth_fetch.html">DTH Fetch API</a></li>
+                <li><a href="bbps.html">BBPS API</a></li>
+                <li><a href="utility_bill.html">Utility Bill Payment API</a></li>
+                <li><a href="pan_card.html">Pancard API(NSDL & UTI)</a></li>
+                <li><a href="nsdl_thum.html">NSDL Thumb & OTP Pan API</a></li>
+                <li><a href="loan_emi.html">Loan EMI Payment API</a></li>
+                <li><a href="fastag.html">FasTag Recharge API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+                <li><a href="lic.html">LIC API</a></li>
+                <li><a href="insurance_emi_api.html">Insurance EMI Payment API</a></li>
+                <li><a href="gas_cylinder.html">Gas Cylinder Booking API</a></li>
+                <li><a href="credit_bill_rent.html">Credit Card Bill payment/Rent Payment API's</a></li>
+                <li><a href="sms.html">SMS API</a></li>
+                <li><a href="bulk_sms.html">Bulk SMS API</a></li>
+                <li><a href="whatsapp.html">WhatsApp API</a></li>
+                <li><a href="aeps.html">AEPS API</a></li>
+                <li><a href="dmt.html">DMT API</a></li>
+                <li><a href="indo_nepal.html">Indo Nepal Money Transfer API</a></li>
+                <li><a href="matm.html">mATM Solution API</a></li>
+                <li><a href="mpos_pos.html">MPOS & POS Machine API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+                
+                <li><a href="cms.html">CMS API</a></li>
+                <li><a href="ac_verification.html">A/C Verification API</a></li>
+                <li><a href="ifsc_ver.html">IFSC Verification API</a></li>
+                <li><a href="upi_ver.html">UPI Verification API</a></li>
+                <li><a href="pan_ver.html">Pan Verification</a></li>
+                <li><a href="aadhar_ver.html">Aadhar Verification API</a></li>
+                <li><a href="aadhar_authen.html">Aadhar Authentication API</a></li>
+                <li><a href="aadhar_xml.html">Aadhar Xml Extraction</a></li>
+                <li><a href="driving_licence.html">Driving Licence Authentication API</a></li>
+                <li><a href="esign_authen.html">eSign Authentication System API</a></li>
+                <li><a href="insurnace_buy.html">Insurance Buy API <br> (Personal,Health,<br> General)</a></li>
+                <li><a href="gift.html">Gift Voucher API</a></li>
+
+              </ul>
+              <ul class="mega-col">
+              
+                <li><a href="irctc.html">IRCTC API(Bus,Flight,Hotal,<br> Cab,Train,Travel)</a></li>
+                <li><a href="upi_ecoll.html">UPI Ecollection API</a></li>
+                <li><a href="../payment.html">Payment Gateway</a></li>
+                <li><a href="virtual_ac.html">Virtual Account API</a></li>
+                <li><a href="payout_payin.html">Payout/Payin settlement API's</a></li>
+                <li><a href="upi.html">UPI To UPI Transfer API</a></li>
+                <li><a href="home_loan.html">Home Loan API</a></li>
+                <li><a href="personal_loan.html">Personal Loan API</a></li>
+                <li><a href="business_loan.html">Business Loan API</a></li>
+                <li><a href="vehicle_loan.html">Vehicle Loan API</a></li>
+                <li><a href="ac_opening.html">A/C Opening API</a></li>
+                <li><a href="credit_card.html">Credit Card API</a></li>
+                <li><a href="demat_ac.html">Demat A/C Opening API</a></li>
+
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="navtag" href="">Services</a>
+          <ul>
+            <li>
+              <a href='../insurance.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z" />
+                </svg>
+                Insurance
+              </a>
+            </li>
+            <li>
+              <a href='../micro_atm.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6.644 11.094a.5.5 0 0 1 .356-.15h2a.5.5 0 0 1 .356.15c.175.177.39.347.603.496a7 7 0 0 0 .752.456l.01.006h.003A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.224-.947l.002-.001.01-.006a4 4 0 0 0 .214-.116 8 8 0 0 0 .539-.34c.214-.15.428-.319.603-.496M7 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
+                  <path
+                    d="M2 3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm6 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4M12.5 7a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1" />
+                </svg>
+                Micro ATM
+              </a>
+            </li>
+            <li>
+              <a href='../whitelable.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                  <path
+                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                </svg>
+                Whitelable Software
+              </a>
+            </li>
+            <li>
+              <a href='../mlm_devp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                MLM Development
+              </a>
+
+            </li>
+            <li>
+              <a href='../payment.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path d="M2 2h2v2H2z" />
+                  <path d="M6 0v6H0V0zM5 1H1v4h4zM4 12H2v2h2z" />
+                  <path d="M6 10v6H0v-6zm-5 1v4h4v-4zm11-9h2v2h-2z" />
+                  <path
+                    d="M10 0v6h6V0zm5 1v4h-4V1zM8 1V0h1v2H8v2H7V1zm0 5V4h1v2zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8zm0 0v1H2V8H1v1H0V7h3v1zm10 1h-1V7h1zm-1 0h-1v2h2v-1h-1zm-4 0h2v1h-1v1h-1zm2 3v-1h-1v1h-1v1H9v1h3v-2zm0 0h3v1h-2v1h-1zm-4-1v1h1v-2H7v1z" />
+                  <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z" />
+                </svg>
+                Payment Gatway
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="navtag" href="">Products</a>
+          <ul>
+            <li>
+              <a href='../whitelable.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                  <path
+                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                </svg>
+                Whitelable Software
+              </a>
+            </li>
+            <li>
+
+            </li>
+            <li>
+              <a href='../mlm_devp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                MLM
+              </a>
+            </li>
+
+
+            <li><a href='../erp.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                ERP
+              </a>
+            </li>
+
+            <li>
+              <a href='../cms.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                CMS
+              </a>
+            </li>
+
+            <li>
+              <a href='../reseller_soft.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                Reseller Software
+              </a>
+            </li>
+            <li>
+              <a href='../real_estate.html'
+                class='hover:text-[#007bffe5] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="mr-4 inline-block" viewBox="0 0 16 16">
+                  <path
+                    d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                  <path
+                    d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                  <path
+                    d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                </svg>
+                Real Estate Software
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="navtag" href="../contact.html">Contact Us</a>
+        </li>
+
+        <li>
+          <a class="navtag" href="../about.html">About Us</a>
+        </li>
+        <li>
+          <a class="navtag" href="../sign_login.html">Sign/Login</a>
+        </li>
+      </ul>
+    </navi>
+  </div>
+
+  <script src="../js/dropdownbt.js"></script>
+
+  <!-- head section end  -->
+
+
+
+<!-- hero section -->
+
+    <section class="text-gray-600 body-font pt-16">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="../images/pancard_imp.jpg">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">What is the importance 
+              <br class="hidden lg:inline-block">of PAN Card?
+            </h1>
+            <p class="mb-8 leading-relaxed">PAN Card is a Permanent Account Number, which is issued by the income tax department to prevent from eluding taxes. PAN is a 10-digit alphanumeric universal identification number which track your all financial activities.</p>
+            <div class="flex justify-center">
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- steps section -->
+
+      <div class="p-4 max-w-xl mx-auto dark:bg-gray-800">
+
+        <h2 class="font-heading dark:text-gray-100 mb-8 text-3xl font-bold lg:text-4xl">Pan Card NSDL Service
+        </h2>
+    
+        <div class="flex">
+            <div class="mr-4 flex flex-col items-center">
+                <div>
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-blue-800 dark:text-slate-200">
+                            <path d="M12 5l0 14"></path>
+                            <path d="M18 13l-6 6"></path>
+                            <path d="M6 13l6 6"></path>
+                        </svg></div>
+                </div>
+                <div class="h-full w-px bg-gray-300 dark:bg-slate-500"></div>
+            </div>
+            <div class="pt-1 pb-8">
+                <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">PAN Card Verification API and its benefits</p>
+                <p class="text-gray-600 dark:text-slate-400">Verification of PAN via API is very important for entities and organizations which regulated to do so. PAN Verification API is a service by which certain organizations are able to identify your PAN information.</p>
+            </div>
+        </div>
+    
+    
+        <div class="flex">
+            <div class="mr-4 flex flex-col items-center">
+                <div>
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-blue-800 dark:text-slate-200">
+                            <path d="M12 5l0 14"></path>
+                            <path d="M18 13l-6 6"></path>
+                            <path d="M6 13l6 6"></path>
+                        </svg></div>
+                </div>
+                <div class="h-full w-px bg-gray-300 dark:bg-slate-500"></div>
+            </div>
+            <div class="pt-1 pb-8">
+                <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">PAN Verification API is recommended to verify your PAN Card</p>
+                <p class="text-gray-600 dark:text-slate-400">As PAN Card play a vital role in our daily routine life. Its mandatory to having the correct details on our PAN Card. It may cause to affect your daily routine activities or your PAN card becomes useless.</p>
+            </div>
+        </div>
+    
+    
+        <div class="flex">
+            <div class="mr-4 flex flex-col items-center">
+                <div>
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-blue-800 dark:text-slate-200">
+                            <path d="M12 5l0 14"></path>
+                            <path d="M18 13l-6 6"></path>
+                            <path d="M6 13l6 6"></path>
+                        </svg></div>
+                </div>
+                <div class="h-full w-px bg-gray-300 dark:bg-slate-500"></div>
+            </div>
+            <div class="pt-1 pb-8">
+                <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Why choose Planet C Technology Recharge for PAN Card API</p>
+                <p class="text-gray-600 dark:text-slate-400">We're trusted for supplying recharge, money transport, travel, and shopping API at India, within this domain name and brand.
+                  We offer support to our clients to run their business successfully.
+                  Because clients are the hope of our small business, We're working for our customers.
+                  Our API is 100% affordable and profitable.
+                  </p>
+            </div>
+        </div>
+    
+    
+        <div class="flex">
+            <div class="mr-4 flex flex-col items-center">
+                <div>
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900 bg-blue-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-6 w-6 text-white dark:text-slate-200">
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-1 ">
+                <p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Ready!</p>
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+
+    <section class="bg-gray-50 py-12 sm:py-16 lg:py-20 xl:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+              <p class="text-sm font-bold uppercase tracking-widest text-gray-700">How It Works</p>
+              <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">Pan Card UTI
+              </h2>
+              <p class="mx-auto mt-4 max-w-2xl text-lg font-normal text-gray-700 lg:text-xl lg:leading-8">
+              </p>
+          </div>
+          <ul class="mx-auto mt-12 grid max-w-md grid-cols-1 gap-10 sm:mt-16 lg:mt-20 lg:max-w-5xl lg:grid-cols-3">
+              <li class="flex-start group relative flex lg:flex-col">
+                  <span
+                      class="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
+                      aria-hidden="true"></span>
+                  <div
+                      class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-gray-900 group-hover:bg-gray-900">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5 text-gray-600 group-hover:text-white">
+                          <path
+                              d="M21 12C21 13.6569 16.9706 15 12 15C7.02944 15 3 13.6569 3 12M21 5C21 6.65685 16.9706 8 12 8C7.02944 8 3 6.65685 3 5M21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5M21 5V19C21 20.6569 16.9706 22 12 22C7.02944 22 3 20.6569 3 19V5"
+                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </div>
+                  <div class="ml-6 lg:ml-0 lg:mt-10">
+                      <h3
+                          class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
+                          Apply for a PAN card
+                        </h3>
+                      <h4 class="mt-2 text-base text-gray-700"></h4>
+                  </div>
+              </li>
+              
+              <li class="flex-start group relative flex lg:flex-col">
+                  <span
+                      class="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
+                      aria-hidden="true"></span>
+                  <div
+                      class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-gray-900 group-hover:bg-gray-900">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5 text-gray-600 group-hover:text-white">
+                          <path
+                              d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12C22 9.79086 17.5228 8 12 8C6.47715 8 2 9.79086 2 12M22 12C22 14.2091 17.5228 16 12 16C6.47715 16 2 14.2091 2 12M12 22C6.47715 22 2 17.5228 2 12M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2M12 22C9.79086 22 8 17.5228 8 12C8 6.47715 9.79086 2 12 2M2 12C2 6.47715 6.47715 2 12 2"
+                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </div>
+                  <div class="ml-6 lg:ml-0 lg:mt-10">
+                      <h3
+                          class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
+                          Pan card Tracking
+                      </h3>
+                      <h4 class="mt-2 text-base text-gray-700"></h4>
+                  </div>
+              </li>
+              <li class="flex-start group relative flex lg:flex-col">
+                  <div
+                      class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-gray-900 group-hover:bg-gray-900">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5 text-gray-600 group-hover:text-white">
+                          <path
+                              d="M5.50049 10.5L2.00049 7.9999L3.07849 6.92193C3.964 6.03644 4.40676 5.5937 4.9307 5.31387C5.39454 5.06614 5.90267 4.91229 6.42603 4.86114C7.01719 4.80336 7.63117 4.92617 8.85913 5.17177L10.5 5.49997M18.4999 13.5L18.8284 15.1408C19.0742 16.3689 19.1971 16.983 19.1394 17.5743C19.0883 18.0977 18.9344 18.6059 18.6867 19.0699C18.4068 19.5939 17.964 20.0367 17.0783 20.9224L16.0007 22L13.5007 18.5M7 16.9998L8.99985 15M17.0024 8.99951C17.0024 10.1041 16.107 10.9995 15.0024 10.9995C13.8979 10.9995 13.0024 10.1041 13.0024 8.99951C13.0024 7.89494 13.8979 6.99951 15.0024 6.99951C16.107 6.99951 17.0024 7.89494 17.0024 8.99951ZM17.1991 2H16.6503C15.6718 2 15.1826 2 14.7223 2.11053C14.3141 2.20853 13.9239 2.37016 13.566 2.5895C13.1623 2.83689 12.8164 3.18282 12.1246 3.87469L6.99969 9C5.90927 10.0905 5.36406 10.6358 5.07261 11.2239C4.5181 12.343 4.51812 13.6569 5.07268 14.776C5.36415 15.3642 5.90938 15.9094 6.99984 16.9998V16.9998C8.09038 18.0904 8.63565 18.6357 9.22386 18.9271C10.343 19.4817 11.6569 19.4817 12.7761 18.9271C13.3643 18.6356 13.9095 18.0903 15 16.9997L20.1248 11.8745C20.8165 11.1827 21.1624 10.8368 21.4098 10.4331C21.6291 10.0753 21.7907 9.6851 21.8886 9.27697C21.9991 8.81664 21.9991 8.32749 21.9991 7.34918V6.8C21.9991 5.11984 21.9991 4.27976 21.6722 3.63803C21.3845 3.07354 20.9256 2.6146 20.3611 2.32698C19.7194 2 18.8793 2 17.1991 2Z"
+                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </div>
+                  <div class="ml-6 lg:ml-0 lg:mt-10">
+                      <h3
+                          class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
+                          Pan Verification
+                      </h3>
+                      <h4 class="mt-2 text-base text-gray-700"></h4>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+
+
+
+
+  <!-- footer section -->
+
+
+  <footer class="text-gray-600 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="../images/Logo_Horizontal.png" width="50%" alt="error">
+          <span class="ml-3 text-xl"></span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Digital Payment Instant Solution</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DBOS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="micro_atm.html" class="text-gray-600 hover:text-gray-800">Micro ATM</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-600 hover:text-gray-800">UPI QR</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-600 hover:text-gray-800">Domestic Money Transfer</a>
+            </li>
+            <li>
+              <a href="insurance.html" class="text-gray-600 hover:text-gray-800">Insurance</a>
+            </li>
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-gray-800">BBPS</a>
+            </li>
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-gray-800">Pan Card</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Consumers</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://pctpay.com/index.php/industries/banking/" class="text-gray-600 hover:text-gray-800">Bank
+                Account</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Payments</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Loans</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Investments</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Policies</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">ERP Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">KYC Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Performance Evaluation Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Terms of Use - Merchants</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Legal</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Disclaimer</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Annual Report 22-23</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Annual Return 22-23</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 developed By Abu Faiz —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@AbuFaiz</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
